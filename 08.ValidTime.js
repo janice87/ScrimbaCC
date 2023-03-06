@@ -4,6 +4,9 @@ function validTime(str) {
    
    let hour = parseInt(time[0]) // parseInt to make it an integer 2 and not 02
    let mins = parseInt(time[1])
+
+   // using array destructuring
+   // const [hour, mins] = str.split(':');
    
     if(hour < 0 || hour > 24){
         return false
@@ -14,7 +17,10 @@ function validTime(str) {
     return true
 }
 
+// parses a string argument and returns an integer 
+// parseInt(string, radix)
 
+// https://scrimba.com/learn/adventcalendar/valid-time-solution-c2KBvKTa
 
 /**
 * Test Suite 
